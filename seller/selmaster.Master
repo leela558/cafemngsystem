@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="selmaster.master.cs" Inherits="cafemangement.views.seller.selmaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/lib/css/bootstrap.min.css"
+</head>
+    <style>
+     
+        a:hover{
+            background-color:#ffffff;
+           
+        }
+        body{
+            font-family:Arial;
+
+
+        }
+         li{
+            display:inline;
+            float:left;
+            margin-right:25px;
+            margin:0 0px 0 25px ;
+           
+        }
+       li a{
+            display:block;
+            padding:19px 30px;
+            text-align:center;
+            color:white;
+            text-decoration-line:none;
+
+
+        }
+        ul {
+            list-style-type: none;
+            margin:0px 0px 0px 0px ;
+            padding: 10px 10px  10 10px ;
+            overflow: hidden;
+            background-color:;
+    </style>
+<body> <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a href="#"><img src="../../assets/images/icons8-cafe-67.png"</a>
+  <div class="container-fluid">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link " href="makebill.aspx">Billing</a>
+        </li>
+        <li class="nav-item text-light">
+          <a class="nav-link " href="viewbill.aspx">View bills</a>
+        </li>
+       
+       
+          <li class="nav-item text-light">
+          <a class="nav-link" href="../login.aspx">logout</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Mybody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

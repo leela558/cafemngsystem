@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs" Inherits="cafemangement.views.admin.adminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../../assets/lib/css/bootstrap.min.css"
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <style>
+     
+        a:hover{
+            background-color:#ffffff;
+           
+        }
+        body{
+            font-family:Arial;
+
+
+        }
+         li{
+            display:inline;
+            float:left;
+            margin-right:25px;
+            margin:0 0px 0 25px ;
+           
+        }
+       li a{
+            display:block;
+            padding:19px 30px;
+            text-align:center;
+            color:white;
+            text-decoration-line:none;
+
+
+        }
+        ul {
+            list-style-type: none;
+            margin:0px 0px 0px 0px ;
+            padding: 10px 10px  10 10px ;
+            overflow: hidden;
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <img src="../../assets/images/icons8-cafe-67.png" style="float:left;margin-top:-10px;>
+  <div class="container-fluid">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link " href="products.aspx">Products</a>
+        </li>
+        <li class="nav-item text-light">
+          <a class="nav-link " href="Categories.aspx">Categories</a>
+        </li>
+       
+        <li class="nav-item text-light">
+          <a class="nav-link"href="Seller.aspx">Seller</a>
+        </li>
+          <li class="nav-item text-light">
+          <a class="nav-link" href="../login.aspx">logout</a>
+        </li>
+          <li class="nav-item text-light">
+          <a class="nav-link" href="viewbill1.aspx">bills</a>
+        </li>
+
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Mybody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
